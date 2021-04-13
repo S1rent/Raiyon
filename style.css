@@ -2,6 +2,7 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -21,6 +22,7 @@ main {
     color: #eeeeee;
     padding: 20px 50px;
     overflow: hidden;
+    z-index: 1000;
 }
 
 #header-navbar .logo {
@@ -87,7 +89,7 @@ main {
 }
 
 #content-banner div h1 {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
 }
 
@@ -125,3 +127,84 @@ main {
     font-weight: 800;
     font-size: 60px;
 }
+
+aside h1 {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 0px;
+}
+
+aside .card-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quality-card {
+    position: relative;
+    width: 31%;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.2s;
+    text-align: center;
+}
+
+.quality-card:hover {
+    top: -15px;
+}
+
+.quality-card img {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.quality-card h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.quality-card p {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 20px;
+}
+
+#article-section h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#article-section article {
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#article-section article h1 {
+    font-size: 35px;
+    text-align: left !important;
+}
+
+#article-section div {
+    padding: 0 20px;
+}
+
+#scrollTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+  }

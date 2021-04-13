@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="scroll.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>Dicoding - Dasar Pemrograman Web</title>
@@ -17,8 +18,8 @@
                 <a class="logo" href="index.html"><span>Loneup</span>.id</a>
                 <ul>
                     <li><a href="">About Us</a></li>
-                    <li><a href="">B</a></li>
-                    <li><a href="">Products</a></li>
+                    <li><a href="#article-section">Products</a></li>
+                    <li><a href="#aside-quality">Quality</a></li>
                     <li><a href="" style="pointer-events: none; border:none;">&nbsp;</a></li>
                 </ul>
             </nav>
@@ -29,8 +30,7 @@
                 <div id="content-banner">
                     <img src="Assets/3745105.jpg">
                     <div>
-                        <h1>We are <span>your</span> gaming solution.</h1>
-
+                        <h1>We are your <span>gaming solution.</span</h1>
                         <p>
                             Find your gaming needs with the best price here.<br><br>
                             
@@ -44,12 +44,50 @@
                         </button>
                     </div>
                 </div>
-                <article></article>
+                
+                <aside id="aside-quality">
+                    <h1>Our Quality</h1>
+                    <div class="card-wrapper">
+                        <div class="quality-card">
+                            <img src="Assets/126069.png">
+                            <h2>Best Price</h2>
+                            <p>
+                                We offers the best price for our products.<br>
+                                Our price are absolutely better than any other game store out there.
+                            </p>
+                        </div>
+                        <div class="quality-card">
+                            <img src="Assets/protection-shield-with-a-check-mark.png">
+                            <h2>Security</h2>
+                            <p>
+                                We offers secure transaction and authenticity.<br>
+                                Our codes are freshly fetched from the suppliers, not like many game store out there.
+                            </p>
+                        </div>
+                        <div class="quality-card">
+                            <img src="Assets/fast-delivery.png">
+                            <h2>Fast Delivery</h2>
+                            <p>
+                                Once the payment is fully success,<br>
+                                The codes or the game top up will automaticly delivered by the sistem.
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+
+                <div id="article-section">
+                    <h1>Products</h1>
+                    <article id="article-products">
+                        <div>
+                            <h1>Steam Wallet</h1>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <aside>
-                ASED
-            </aside>
+            <button id="scrollTopButton" onClick="topFunction()">
         </main>
+
+        </button>
 
         <footer>
 
