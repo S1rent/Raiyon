@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
+    min-width: 300px !important;
 }
 
 main {
@@ -23,6 +24,7 @@ main {
     padding: 20px 50px;
     overflow: hidden;
     z-index: 1000;
+    min-width: 300px;
 }
 
 #header-navbar .logo {
@@ -298,6 +300,22 @@ footer h3 {
     border-radius: 50%;
 }
 
+#navbar-menu-button {
+    background-color: white; 
+    width: 50px; 
+    height: 50px; 
+    float: right; 
+    margin-right: 70px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+#navbar-menu-button:focus {
+    outline: none;
+}
+
 /*Small Media*/
 @media only screen and (max-width: 1665px) {
     main {
@@ -392,7 +410,7 @@ footer h3 {
     }
 
     #header-navbar ul {
-        display: block;
+        display: none;
         float: none;
         width: fit-content;
     }
@@ -409,6 +427,10 @@ footer h3 {
         visibility: hidden;
         height: 0px;
         padding: 0px !important;
+    }
+
+    #navbar-menu-button {
+        display: block;
     }
 }
 
@@ -437,6 +459,10 @@ footer h3 {
 
     #content-banner img {
         width: 100%;
+    }
+
+    #navbar-menu-button {
+        margin-right: 30px;
     }
 }
 

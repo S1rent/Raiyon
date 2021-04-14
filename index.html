@@ -11,16 +11,18 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <script src="scroll.js"></script>
         <script src="article.js"></script>
+        <script src="header.js"></script>
 
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>Dicoding - Dasar Pemrograman Web</title>
     </head>
-    <body>
+    <body onresize="configureHeader()">
         <header>
             <nav id="header-navbar">
                 <a class="logo" href="index.html"><span>Loneup</span>.id</a>
-                <ul>
+                <button id="navbar-menu-button" onclick="toggleMenu()"></button>
+                <ul id="header-navbar-menu">
                     <li><a href="#aside-about-us-title">About Us</a></li>
                     <li><a href="#article-section">Products</a></li>
                     <li><a href="#aside-quality">Quality</a></li>
