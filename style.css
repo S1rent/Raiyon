@@ -316,6 +316,12 @@ footer h3 {
     outline: none;
 }
 
+#navbar-menu-button {
+    background: black url("Assets/ic-hamburger.png") no-repeat;
+    background-size: contain;
+    border: 3px solid white;
+}
+
 /*Small Media*/
 @media only screen and (max-width: 1665px) {
     main {
