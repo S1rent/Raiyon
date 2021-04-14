@@ -6,7 +6,7 @@ html, body {
 }
 
 main {
-    padding: 50px;
+    padding: 100px 200px;
 }
 
 #header-navbar {
@@ -144,7 +144,7 @@ aside .card-wrapper {
     position: relative;
     width: 31%;
     height: 450px;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 20px;
     position: relative;
     top: 0;
@@ -179,18 +179,10 @@ aside .card-wrapper {
     text-align: center;
 }
 
-#article-section article {
-    border: 2px solid black;
-    border-radius: 15px;
-}
-
 #article-section article h1 {
     font-size: 35px;
     text-align: left !important;
-}
-
-#article-section div {
-    padding: 0 20px;
+    margin: 10px 0px;
 }
 
 #scrollTopButton {
@@ -207,4 +199,94 @@ aside .card-wrapper {
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
-  }
+}
+
+.product {
+    justify-content: left;
+    padding: 0px 20px 0px 0px !important;
+}
+
+.product img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    margin: 0px 20px 5px 0px;
+    border-radius: 10px;
+}
+
+.product .vertical-line {
+    width: 4px !important;
+    background-color: black;
+    padding: 0px !important;
+    margin: 0px 20px 20px 0px;
+}
+
+#article-products div {
+    display: flex;
+}
+
+#articles {
+    min-width: 500px;
+}
+
+#articles .product {
+    display: block;
+}
+
+#articles .product p {
+    display: block;
+    text-align: center;
+    padding: 0px 20px;
+    font-size: 20px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: bolder;
+}
+
+.footer-left {
+    padding-left: 50px;
+    color: white;
+}
+
+#footer-image-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#footer-findus-label {
+    color: white;
+    margin-right: 20px;
+}
+
+.footer-image-icon-end {
+    padding-right: 25px;
+}
+
+footer {
+    color: white;
+    background-color: #000000;
+    height: 200px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 50px 0px;
+    justify-content: center;
+}
+
+footer h3 { 
+    text-align: center;
+}
+
+.footer-social-media {
+    right: 0;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradient-background {
+    background: linear-gradient(to top right, #00adb5 10%, #adfaff 80%);
+}
